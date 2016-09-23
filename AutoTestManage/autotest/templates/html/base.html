@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>自动化测试平台</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/static/js/jquery-1.6.2.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("dd").hide();
+            $("dt a").click(function(){
+            $(this).parent().toggleClass("bg");
+             $(this).parent().prevAll("dt").removeClass("bg")
+                $(this).parent().nextAll("dt").removeClass("bg")
+                $(this).parent().next().slideToggle();
+                $(this).parent().prevAll("dd").slideUp("slow");
+                $(this).parent().next().nextAll("dd").slideUp("slow");
+                return false;
+
+        });
+                 });
+    </script>
+<style>
+    html {_padding-top:100px;}
+    html,body { height:100%; overflow:hidden;}
+    body{margin:0;padding:0; list-style:none;}
+    h1{
+        text-align: center;
+        color: #0f0f0f;
+    }
+    h2{
+       text-align: center;
+    }
+    .header{
+        padding: 10px;
+        background-color: #9acfea;
+    }
+    .main_contain_left{
+        overflow: scroll;
+        padding: 10px;
+        width: 350px;
+        height:100%;
+        background-color: #f7ecfd;
+        float: left;
+    }
+    .main-contain_right{
+        overflow: scroll;
+        padding: 10px;
+        width:1568px;
+        height:100%;
+        background-color: inherit;
+        float: left;
+
+    }
+    dl { width: 300px; }
+    dl,dd { margin: 0; }
+    dt { background-color:#ae8758; background-image:url(images/201207.png); background-repeat:no-repeat; background-position:5px 13px; font-size: 18px; padding: 5px 5px 5px 20px; margin: 2px; height:29px; line-height:28px; }
+    dt a { color: #FFF; text-decoration:none; }
+    dd a { color: #000; }
+    ul{ list-style: none; padding:5px 5px 5px 20px; margin:0; }
+    li{ line-height:24px;}
+    .bg{ background-position:5px -16px;}
+</style>
+</head>
+<body>
+<div class="header">
+ <div id="top"><h1>自动化测试平台</h1></div>
+</div>
+<div class="main_contain_left">
+    <dl>
+        <dt><a href="#">方法封装</a></dt>
+        <dd>
+            <ul>
+                <li><a href="#">slenium</a></li>
+                <li><a href="#"> appium</a></li>
+                <li><a href="#">phontjs</a></li>
+            </ul>
+        </dd>
+        <dt><a href="#">业务封装</a></dt>
+        <dd>
+        <ul>
+            <li><a href="#">登陆</a></li>
+            <li><a href="#">注册</a></li>
+            </ul>
+        </dd>
+        <dt><a href="#">测试报告</a></dt>
+        <dd>
+        <ul>
+            <li><a href="#">测试时间统计</a></li>
+            <li><a href="#">测试用例数统计</a></li>
+            <li><a href="#">测试用例通过数统计</a></li>
+            <li><a href="#">测试用例失败数统计</a></li>
+            </ul>
+        </dd>
+    </dl>
+</div>
+<div class="main-contain_right">
+    <h2>自动化测试平台</h2>
+    <h2>自动化测试平台</h2>
+    <h2>自动化测试平台</h2>
+    <h2>自动化测试平台</h2>
+    <h2>自动化测试平台</h2>
+    <h2>自动化测试平台</h2>
+    <h2>自动化测试平台</h2>
+    <h2>自动化测试平台</h2>
+    <h2>自动化测试平台</h2>
+    <h2>自动化测试平台</h2>
+    <h2>自动化测试平台</h2>
+    <h2>自动化测试平台</h2>
+    <h2>自动化测试平台</h2>
+    <h2>自动化测试平台</h2>
+    <h2>自动化测试平台</h2>
+    <h2>自动化测试平台</h2>
+</div>
+</body>
+</html>
